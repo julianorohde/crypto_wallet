@@ -1,0 +1,16 @@
+<div id="<%= dom_id coin %>">
+  <tr>
+    <td>
+      <%= coin.description %>
+    </td>
+    <td>
+      <%= coin.acronym %>
+    </td>
+    <td>
+      <%= image_tag coin.url_image, size: "25x25" %>
+    </td>
+    <td>
+      <%= link_to t('links.show'), coin %>
+    </td>
+  </tr>
+</div>

@@ -1,0 +1,29 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Moedas</h1>
+<h2><%= cookies[:curso]%></h2>
+<h2><%= session[:curso]%></h2>
+
+<div id="coins">
+
+<table>
+  <tr>
+    <th>
+      <strong><%= @coins.human_attribute_name(:description)%></strong>
+    </th>
+    <th>
+      <strong><%= @coins.human_attribute_name(:acronym) %></strong>
+    </th>
+    <th>
+      <strong><%= @coins.human_attribute_name(:url_image) %></strong>
+    </th>
+    <th>
+    </th>
+  </tr>
+  <% @coins.each do |coin| %>
+    <%= render coin %>
+  <% end %>
+</table>
+</div>
+
+<%= link_to "Cadastrar nova moeda", new_coin_path %>
