@@ -46,6 +46,10 @@ gem 'pry-rails'
 gem 'tty-spinner'
 gem 'rails-i18n', '~> 7.0.0'
 
+gem 'jquery-rails'
+gem 'rails-assets-notifyjs'
+gem 'turbolinks'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -74,3 +78,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "cssbundling-rails", "~> 1.1"
+
+gem "jsbundling-rails", "~> 1.1"

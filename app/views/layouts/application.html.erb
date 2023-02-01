@@ -7,22 +7,24 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", media: "all", "data-turbo-track" => "reload" %>
-    <%= stylesheet_link_tag "scaffolds", media: "all", "data-turbo-track" => "reload" %>
     <%= stylesheet_link_tag params[:controller], "data-turbo-track": "reload" %>
 
 
-    <%= javascript_include_tag "application", "data-turbo-track" => "reload" %>
-    <%= javascript_include_tag "jquery", "data-turbo-track" => "reload" %>
-    <%= javascript_include_tag "notify", "data-turbo-track" => "reload" %>
-    <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
   </head>
 
   <body>
-  <h1>CABEÇALHO - <%= params[:controller] %></h1>
-    <%= yield %> <%# index.html.erb, edit.html.erb, etc.%>
-  <h1>RODAPÉ</h1>
-
-  <script>$.notify("Funcionou!", "success");</script>
-
+    <div class="container-fluid">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <%= link_to 'Portugues', root_path(locale: 'pt-BR'), class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'English', root_path(locale: 'en'), class:"nav-link" %>
+        </li>
+      </ul>
+      <%= yield %>
+    </div>
   </body>
 </html>
