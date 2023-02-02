@@ -17,6 +17,10 @@ class CoinsController < ApplicationController
     @coin = Coin.new
   end
 
+  def set_locale
+    I18n.locale = params[:locale] || I18n.default_locale
+  end  
+
   # GET /coins/1/edit
   def edit
   end
@@ -40,8 +44,8 @@ class CoinsController < ApplicationController
   def update
     respond_to do |format|
       if @coin.update(coin_params)
-        format.html { redirect_to coin_url(@coin), notice: "Coin was successfully updated." }
-        format.json { render :show, status: :ok, location: @coin }
+        format.html { redirect_to coin_url(@coin), notice:t('updated_coin')}
+        format.json { render status: :ok, location: @coin }
       else
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @coin.errors, status: :unprocessable_entity }

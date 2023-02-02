@@ -1,9 +1,11 @@
-<h1>New coin</h1>
+<h1><%= t('new_coin')%></h1>
 
 <%= render "form", coin: @coin %>
 
 <br>
 
 <div>
-  <%= link_to "Voltar para o menu de moedas", coins_path %>
+  <%= link_to t('return_coins'), coins_path, class:"btn btn-dark btn-sm", role:"button"%>
 </div>
+
+

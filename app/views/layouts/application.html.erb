@@ -18,10 +18,11 @@
     <div class="container-fluid">
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <%= link_to 'Portugues', root_path(locale: 'pt-BR'), class:"nav-link" %>
+          <button class="btn btn-dark btn-sm" role="button" onclick="window.location.search = '?locale=pt-BR'">Português</button>
         </li>
+      
         <li class="nav-item">
-          <%= link_to 'English', root_path(locale: 'en'), class:"nav-link" %>
+          <button class="btn btn-dark btn-sm" role="button" onclick="window.location.search = '?locale=en'">Inglês</button>
         </li>
       </ul>
       <%= yield %>

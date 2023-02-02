@@ -11,36 +11,69 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
-  </div>
+<br>
+
+<style>
+  form {
+    width: 600px;
+  }
+</style>
+
+<div class="form-group">
+  <%= form.label :description, t('description_coin'), class: "control-label" %>
+  <%= form.text_field :description, class: "form-control", placeholder: "", id: "exampleInputEmail1" %>
+</div>
+
+<br>
+
+<style>
+  form {
+    width: 600px;
+  }
+</style>
+
+<div class="form-group">
+  <%= form.label :acronym, t('acronym_coin'), class: "control-label" %>
+  <%= form.text_field :acronym, class: "form-control", placeholder: "", id: "exampleInputEmail1" %>
+</div>
+
+<br>
+
+<style>
+  form {
+    width: 600px;
+  }
+</style>
+
+<div class="form-group">
+  <%= form.label :url_image, t('urlimage_coin'), class: "control-label" %>
+  <%= form.text_field :url_image, class: "form-control", placeholder: "", id: "exampleInputEmail1" %>
+</div>
+
+<br>
+
+<style>
+  form {
+    width: 600px;
+  }
+</style>
+
+<div class="form-group">
+  <%= form.label :mining_type, t('miningtype_coin'), class: "control-label" %>
+  <%= form.select :mining_type_id, @mining_type_options, { include_blank: t('select_coin') }, class: "form-control", id: "exampleInputEmail1" %>
+</div>
+
 
 <br>
 
   <div>
-    <%= form.label :acronym, style: "display: block" %>
-    <%= form.text_field :acronym %>
+    <%= form.submit t('att_coin'), class:"btn btn-dark btn-sm", role:"button"%>
+    <%= form_for @coin, url: coin_path, method: :get do |f| %>
+      <!-- form inputs aqui -->
+    <%= f.submit t('return_coins'), class: "btn btn-dark btn-sm", role: "button" %>
+    <% end %>
+
   </div>
 
-<br>
 
-  <div>
-    <%= form.label :url_image, style: "display: block" %>
-    <%= form.text_field :url_image %>
-    <%# <%= image_tag coin.url_image, width: 25, height: 25 %>
-  </div>
-  
-<br>
-  
-  <div>
-    <%= form.label :mining_type, style: "display: block" %>
-    <%= form.select("mining_type_id", @mining_type_options, {include_blank: "Selecione..."}) %>
-  </div>
-
-<br>
-
-  <div>
-    <%= form.submit %>
-  </div>
 <% end %>

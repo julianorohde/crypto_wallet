@@ -1,8 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Moedas</h1>
-<h2><%= cookies[:curso]%></h2>
-<h2><%= session[:curso]%></h2>
+<h1><strong>Moedas</strong></h1>
 
 <div id="coins">
 
@@ -26,9 +24,9 @@
 </table>
 </div>
 
-<%= link_to "Cadastrar nova moeda", new_coin_path %>
-<br>
-<br>
-<%= link_to "Voltar", welcome_index_path %>
+
+
+<%= link_to t('register_new_coin'), new_coin_path, class:"btn btn-dark btn-sm", role:"button" %>
+<%= link_to t('return'), welcome_index_path, class:"btn btn-dark btn-sm", role:"button" %>
 
 
