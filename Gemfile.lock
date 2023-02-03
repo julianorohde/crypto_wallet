@@ -136,6 +136,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.14.0-arm64-darwin)
       racc (~> 1.4)
+    pg (1.4.5)
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -171,6 +172,11 @@ GEM
     rails-i18n (7.0.6)
       i18n (>= 0.7, < 2)
       railties (>= 6.0.0, < 8)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (7.0.4.1)
       actionpack (= 7.0.4.1)
       activesupport (= 7.0.4.1)
@@ -241,11 +247,13 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   jsbundling-rails (~> 1.1)
+  pg
   pry-rails
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.1)
   rails-assets-notifyjs
   rails-i18n (~> 7.0.0)
+  rails_12factor
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
