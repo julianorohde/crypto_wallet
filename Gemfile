@@ -21,7 +21,7 @@ gem "importmap-rails"
 gem "turbo-rails"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
-gem "stimulus-rails"
+# gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -46,7 +46,7 @@ gem 'tty-spinner'
 gem 'rails-i18n', '~> 7.0.0'
 
 gem 'jquery-rails'
-gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
+# gem 'rails-assets-notifyjs', source: 'https://rails-assets.org'
 gem 'turbolinks'
 
 # Use Sass to process CSS

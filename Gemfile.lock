@@ -1,9 +1,4 @@
 GEM
-  remote: https://rails-assets.org/
-  specs:
-    rails-assets-notifyjs (0.4.2)
-
-GEM
   remote: https://rubygems.org/
   specs:
     actioncable (7.0.4.2)
@@ -212,8 +207,6 @@ GEM
     sqlite3 (1.6.0-arm64-darwin)
     sqlite3 (1.6.0-x86_64-darwin)
     sqlite3 (1.6.0-x86_64-linux)
-    stimulus-rails (1.2.1)
-      railties (>= 6.0.0)
     thor (1.2.1)
     timeout (0.3.1)
     tty-cursor (0.7.1)
@@ -263,13 +256,11 @@ DEPENDENCIES
   pry-rails
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.1)
-  rails-assets-notifyjs!
   rails-i18n (~> 7.0.0)
   rails_12factor
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
-  stimulus-rails
   tty-spinner
   turbo-rails
   turbolinks
