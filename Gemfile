@@ -46,7 +46,7 @@ gem 'tty-spinner'
 gem 'rails-i18n', '~> 7.0.0'
 
 gem 'jquery-rails'
-gem 'rails-assets-notifyjs'
+#gem 'rails-assets-notifyjs'
 gem 'turbolinks'
 
 # Use Sass to process CSS
