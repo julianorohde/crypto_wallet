@@ -167,6 +167,7 @@ GEM
       activesupport (= 7.0.4.2)
       bundler (>= 1.15.0)
       railties (= 7.0.4.2)
+    rails-assets-notifyjs (0.4.2)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -258,6 +259,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.1)
+  rails-assets-notifyjs
   rails-i18n (~> 7.0.0)
   rails_12factor
   selenium-webdriver
