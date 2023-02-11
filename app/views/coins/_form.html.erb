@@ -66,14 +66,6 @@
 
 <br>
 
-  <div>
-    <%= form.submit t('att_coin'), class:"btn btn-dark btn-sm", role:"button"%>
-    <%= form_for @coin, url: coin_path, method: :get do |f| %>
-      <!-- form inputs aqui -->
-    <%= f.submit t('return_coins'), class: "btn btn-dark btn-sm", role: "button" %>
-    <% end %>
-
-  </div>
-
+<%= form.submit %>
 
 <% end %>
