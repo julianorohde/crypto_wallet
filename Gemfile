@@ -83,8 +83,9 @@ group :production do
   gem "pg"
 end
 
-gem "cssbundling-rails", "~> 1.1"
-
 gem "jsbundling-rails", "~> 1.1"
 
 gem 'rails_12factor'
+gem 'rails_admin', '~> 3.0'
+gem "cssbundling-rails"
+gem 'rails_admin-i18n'

@@ -15,10 +15,11 @@
     "jquery": "^3.6.3",
     "notify-js-legacy": "^0.4.1",
     "popper.js": "^1.16.1",
-    "sass": "^1.58.0"
+    "rails_admin": "3.1.1",
+    "sass": "^1.58.2"
   },
   "scripts": {
-    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules",
-    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets"
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
+    "build:css": "sass ./app/assets/stylesheets/application.sass.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
   }
 }

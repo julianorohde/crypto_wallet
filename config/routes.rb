@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :mining_types
   get 'welcome/index'#, to: 'welcome#index'
   get '/inicio', to: 'welcome#index'
