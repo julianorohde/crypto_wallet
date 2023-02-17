@@ -23,6 +23,7 @@ Rails.application.config.assets.precompile += %w(   cable.css
                                                     mining_types.css
                                                     scaffolds.css
                                                     welcome.css
+                                                    rails_admin.css
 )
 
 Rails.application.config.assets.paths << Rails.root.join("node_modules/@fortawesome/fontawesome-free/webfonts")
